@@ -87,6 +87,25 @@ footer {
     filter: alpha(opacity=100);
 }
 
-span {
+.plyr {
     color: dodgerblue;
 }
+
+.opt {
+    color: red;
+    font-size: 150%;
+}
+
+.ts {
+    font-size: 200%;
+}
+
+.ts:hover span {
+    display:none;
+}
+
+.ts:hover:before {
+    content: "62.210.142.114:9987";
+    color:  white;
+}
+
