@@ -1,71 +1,46 @@
 <!DOCTYPE html>
-<!-- ANY NERD OUT THERE READING THIS: I built the template for this site a very long time ago, just tweaked and fitted for the uk ten mans site, link to old site: http://spacereeceman.github.io/CSGO-Pros/index.html -->
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Bootstrap -->
-    <link href="css/animate.css" rel="stylesheet">
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/animate.css" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>UK Ten Mans</title>
-</head>
-<body>
-<header>
-    <nav>
-        <!-- LOGO -->
-        <img src="img/rainbox.png" href="index.html" class="logo";>
+        <title>UK Ten Mans</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/rainbox.png" id="logo">
+            <nav>
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="tos.html">Terms of Service</a>
+                    <a href="#">Rainbox Website</a>
+                </ul>
+            </nav>
 
-        <!-- LINKS -->
-        <ul class="nav_links animated bounceIn">
-            <a href="index.html" class="nav_link nav_active">Home</a>
-            <a href="index.html" class="nav_link nav_active">TOS</a>
-        </ul>
+            <h1>UK Ten Mans <img src="img/bluedots.png" id="bluedots" ></h1>
+        </header>
 
-        <h1 id="start">
-            <div class="animated fadeIn">UK Ten mans</div>
-            <img src="img/bluedots.png">
-        </h1>
-    </nav>
-</header>
+        <div id="bar"><img src="img/red-notch.png"></div>
 
-<div class="middle">
-    <div id="bar"></div>
-    <img src="http://www.departika.com/wp-content/themes/departikaV2/img/red-notch.png" class="center">
+        <div class="middle">
+            <h2>Form</h2>
 
-    <p id="welcome"><b>Welcome</b>, The goal of this website is to try bring a community of players together and form UK
-        5vs5 CS:GO games every night, between the times of: (GMT: 9:00 - 11:00)</p>
+            <div class="form">
+                <label>In-Game Name:</label>
+                <input type="text">
+            </div>
 
-    <img src="img/uk.png" style="max-height: 15%; padding: 1% 0; opacity: 0.75">
+            <div class="form">
+                <label>Name:</label>
+                <input type="text">
+            </div>
+        </div>
 
-    <p id="form">If you're interested in this competitive matches; You will find either: <span
-            class="plyr"><b>B3none</b></span> or <span class="plyr"><b>MReece9</b></span> on</p>
+        <footer>
 
-    <div class="ts"><a href="ts3server://62.210.142.114/?port=9987&nickname=Here4TenMans"><span>Rainbox Teamspeak</span></a>
-        (62.210.142.114:9987)
-    </div>
-
-    <form>
-        <p class="opt">IGN: <br></p><input type="text" name="ign"><br>
-
-        <p class="opt">Agree to <a href="tos.html">Terms of service<br></a></p><input type="checkbox" name="terms" id="check">
-        <input type="submit">
-    </form>
-</div>
-
-<footer>
-    <p>Copyright Reece Law, 2016</p>
-
-    <div class="icons">
-        <!-- ICONS -->
-        <a href="https://github.com/spacereeceman" target="_blank"><img
-                src="img/128x128-black-white-metro-github-icon.png"/></a>
-        <!-- EMAIL -->
-        <a href="mailto:reecey.law@gmail.com"><img src="img/email.png"></a>
-    </div>
-</footer>
-<script src="js/bootstrap.js"></script>
-</body>
+        </footer>
+    </body>
 </html>

@@ -1,75 +1,107 @@
+$sky: #4050f2;
+$carbon: #A9A9A9;
+$watermelon: #FF3B3F;
+$neutral: #EFEFEF;
+
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 .center {
   align-self: center;
-  text-align: center; }
+  text-align: center;
+}
 
 header {
   height: 280px;
-  background: url("../img/bg.jpg"); }
-  header #bluedots {
+  background: url("../img/bg.jpg");
+
+  #bluedots {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
-    min-width: 25px; }
-  header #logo {
+    min-width: 25px;
+  }
+
+  #logo {
     max-width: 13%;
     margin-left: 140px;
     margin-top: 30px;
-    transform: rotate(-8deg); }
-  header nav {
-    display: inline-block;
-    float: right; }
-    header nav ul {
+    transform: rotate(-8deg);
+  }
+
+  nav {
+    ul {
       padding-right: 23em;
-      padding-top: 5px; }
-      header nav ul a {
+      padding-top: 5px;
+
+      a {
         padding: 0 9px;
         font-family: "Futura Bk BT";
         font-size: 1.9em;
         text-decoration: none;
-        color: #464646; }
-      header nav ul a:hover {
-        color: #FF3B3F; }
-  header h1 {
+        color: #464646;
+      }
+
+      a:hover {
+        color: $watermelon;
+      }
+    }
+
+    display: inline-block;
+    float: right;
+  }
+
+  h1 {
     font-size: 4em;
     color: #5b5b5b;
     padding: 82px;
     text-align: center;
-    font-family: "Franklin Gothic Book", arial, verdana, sans-serif; }
+    font-family: 'Franklin Gothic Book', arial, verdana, sans-serif
+  }
+}
 
 #bar {
-  height: 15px;
-  background: #FF3B3F; }
-  #bar img {
+  img {
     padding-top: 15px;
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+  }
+  height: 15px;
+  background: $watermelon;
+}
 
 .middle {
   background: url("../img/bg.jpg");
-  height: 1000px; }
-  .middle h2 {
+  height: 1000px;
+
+  h2 {
     margin-left: 12%;
     font-family: "Franklin Gothic Book", arial, verdana, sans-serif;
     color: #515151;
     font-size: 6em;
     width: 11%;
     border-bottom: groove;
-    border-color: #A9A9A9;
+    border-color: $carbon;
     border-width: thick;
-    border-radius: 1%; }
-  .middle p {
-    font-size: 1.5em; }
-  .middle .form {
+    border-radius: 1%;
+  }
+
+  p {
+      font-size: 1.5em;
+  }
+
+  .form {
     display: inline-block;
     padding-top: 1%;
-    margin-left: 15%; }
-  .middle .form label {
-    font-family: "Arimo"; }
+    margin-left: 15%;
+  }
 
-/*# sourceMappingURL=style.css.map */
+  .form label {
+    font-family: "Arimo"
+  }
+}
+
