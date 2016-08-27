@@ -7,40 +7,59 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>UK Ten Mans</title>
+        <title>EU Ten Mans</title>
     </head>
     <body>
+        <!-- Navigation bar -->
+        <nav>
+            <!-- Using a table to display links as a nav bar -->
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="http://rainboxgaming.com/index.php">Rainbox Website</a>
+            </ul>
+        </nav>
+
+        <!-- Logo and top end of page -->
         <header>
-            <img src="img/rainbox.png" id="logo">
-            <nav>
-                <ul>
-                    <a href="#">Home</a>
-                    <a href="tos.html">Terms of Service</a>
-                    <a href="#">Rainbox Website</a>
-                </ul>
-            </nav>
-
-            <h1>UK Ten Mans <img src="img/bluedots.png" id="bluedots" ></h1>
+            <img src="img/rainbox.png" id="logo" class="animated lightSpeedIn" href="http://rainboxgaming.com/index.php">
+            <h1>EU Ten Mans <img src="img/bluedots.png" id="bluedots" ></h1>
         </header>
-
+        <!-- Red notch to go with bar -->
         <div id="bar"><img src="img/red-notch.png"></div>
 
+        <!-- Middle section of page -->
         <div class="middle">
-            <h2>Form</h2>
-
-            <div class="form">
+            <!-- Form Area -->
+            <div id="middleContent">
+                <h2>Information</h2>
+                <p>Me and the Rainbox community will be hosting nightly ten man Counter Strike Global:Offensive games everynight, during the times of 8:00 - 10:00 GMT Time,
+                    If you wish to come and play free to come and join the <span><a href="ts3server://62.210.142.114?port=9987">Rainbox Teamspeak</a></span> , Server Address: 62.210.142.114
+                    , During those times and enjoy a competitive ten man game!
+                </p>
+            </div>
+            <!-- OLD FORM SYSTEM, NOT USED
+            <div class="form" style="margin-left: 12%">
                 <label>In-Game Name:</label>
                 <input type="text">
             </div>
-
-            <div class="form">
+           <div class="form">
                 <label>Name:</label>
                 <input type="text">
             </div>
+            <div class="form">
+                <input type="submit" id="submit">
+            </div> -->
         </div>
 
+        <!-- Bottom end of page, social media, copyright etc -->
         <footer>
+            <p>Made by Reece Law</p>
 
+            <div class="footerImg">
+                <a href="https://github.com/spacereeceman"><img src="img/128x128-black-white-metro-github-icon.png"></a>
+                <a href="mailto:spacereeceman@gmail.com"><img src="img/email.png"></a>
+                <a href=""><img src="img/skype.png"></a>
+            </div>
         </footer>
     </body>
 </html>

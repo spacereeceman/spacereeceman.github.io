@@ -1,4 +1,4 @@
-$sky: #4050f2;
+$sky: #CAEBF2;
 $carbon: #A9A9A9;
 $watermelon: #FF3B3F;
 $neutral: #EFEFEF;
@@ -13,16 +13,34 @@ $neutral: #EFEFEF;
   text-align: center;
 }
 
+nav {
+  background: $neutral;
+  height: 35px;
+  ul {
+    text-align: right;
+    a {
+      padding: 0 9px;
+      font-family: "Futura Bk BT";
+      font-size: 2em;
+      text-decoration: none;
+      color: #464646;
+    }
+    a:hover {
+      color: $watermelon;
+    }
+  }
+}
+
 header {
   height: 280px;
-  background: url("../img/bg.jpg");
+  background: url("../img/bg8.png");
 
   #bluedots {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
-    min-width: 25px;
+    padding-top: 5px;
+    max-width: 80px;
   }
 
   #logo {
@@ -32,31 +50,9 @@ header {
     transform: rotate(-8deg);
   }
 
-  nav {
-    ul {
-      padding-right: 23em;
-      padding-top: 5px;
-
-      a {
-        padding: 0 9px;
-        font-family: "Futura Bk BT";
-        font-size: 1.9em;
-        text-decoration: none;
-        color: #464646;
-      }
-
-      a:hover {
-        color: $watermelon;
-      }
-    }
-
-    display: inline-block;
-    float: right;
-  }
-
   h1 {
     font-size: 4em;
-    color: #5b5b5b;
+    color: deepskyblue;
     padding: 82px;
     text-align: center;
     font-family: 'Franklin Gothic Book', arial, verdana, sans-serif
@@ -65,43 +61,79 @@ header {
 
 #bar {
   img {
-    padding-top: 15px;
+    padding-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  height: 15px;
+  height: 20px;
   background: $watermelon;
 }
 
 .middle {
-  background: url("../img/bg.jpg");
+  background: url("../img/bg10.png");
   height: 1000px;
 
+  #middleContent {
+    p {
+      color: #55aab1;
+      padding-top: 1%;
+      font-family: "Arial";
+      font-size: 1.4em;
+      margin-right: 10%;
+
+      span {
+        a {
+          color: #215afa;
+          text-decoration: none;
+        }
+      }
+    }
+  }
   h2 {
-    margin-left: 12%;
     font-family: "Franklin Gothic Book", arial, verdana, sans-serif;
     color: #515151;
-    font-size: 6em;
-    width: 11%;
-    border-bottom: groove;
+    font-size: 5.7em;
+    width: 26%;
+    border-bottom: solid;
     border-color: $carbon;
     border-width: thick;
-    border-radius: 1%;
   }
 
+  #submit {
+    min-width: 85px;
+    min-height: 30px;
+  }
+
+  #middleContent {
+    margin-left: 150px;
+  }
+}
+
+footer {
   p {
-      font-size: 1.5em;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.3em;
+    font-family: "Arial";
   }
 
-  .form {
-    display: inline-block;
-    padding-top: 1%;
-    margin-left: 15%;
-  }
+  background: url("../img/bg10.png");
+  height: 190px;
 
-  .form label {
-    font-family: "Arimo"
+  .footerImg {
+    text-align: center;
+    padding-top: 10px;
+
+    img {
+      opacity: 0.6;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    img:hover {
+      opacity: 1.0;
+    }
   }
 }
 
