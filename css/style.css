@@ -21,7 +21,7 @@ nav {
       color: #FF3B3F; }
 
 header {
-  height: 280px;
+  height: 280%;
   background: url("../img/bg8.png"); }
   header #bluedots {
     display: block;
@@ -30,8 +30,8 @@ header {
     padding-top: 5px;
     max-width: 80px; }
   header #logo {
-    max-width: 13%;
-    margin-left: 140px;
+    max-width: 15%;
+    margin-left: 170px;
     margin-top: 30px;
     transform: rotate(-8deg); }
   header h1 {
@@ -53,19 +53,21 @@ header {
 .middle {
   background: url("../img/bg10.png");
   height: 1000px; }
-  .middle #middleContent p {
-    color: #55aab1;
-    padding-top: 1%;
-    font-family: "Arial";
-    font-size: 1.4em;
+  .middle #middleContent {
+    margin-left: 10%;
     margin-right: 10%; }
-    .middle #middleContent p span a {
-      color: #215afa;
-      text-decoration: none; }
+    .middle #middleContent p {
+      color: #55aab1;
+      padding-top: 1%;
+      font-family: "Arial";
+      font-size: 1.4em; }
+      .middle #middleContent p span a {
+        color: #215afa;
+        text-decoration: none; }
   .middle h2 {
     font-family: "Franklin Gothic Book", arial, verdana, sans-serif;
     color: #515151;
-    font-size: 5.7em;
+    font-size: 550%;
     width: 26%;
     border-bottom: solid;
     border-color: #A9A9A9;
@@ -73,8 +75,6 @@ header {
   .middle #submit {
     min-width: 85px;
     min-height: 30px; }
-  .middle #middleContent {
-    margin-left: 150px; }
 
 footer {
   background: url("../img/bg10.png");
@@ -93,5 +93,31 @@ footer {
       padding-right: 10px; }
     footer .footerImg img:hover {
       opacity: 1.0; }
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 300px; }
+    header #logo {
+      max-width: 1000px; }
+
+  .middle #middleContent h2 {
+    font-size: 30px; } }
+@media only screen and (max-width: 425px) {
+  nav ul a {
+    padding: 0 3px;
+    font-size: 1.6em; }
+
+  header {
+    height: 300px;
+    font-size: 80%; }
+    header #logo {
+      max-width: 150px; }
+
+  .middle #middleContent h2 {
+    font-size: 30px;
+    width: 53%; }
+
+  footer {
+    height: 310px; } }
 
 /*# sourceMappingURL=style.css.map */
